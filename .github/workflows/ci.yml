@@ -47,7 +47,7 @@ jobs:
 
       - name: Build and push final image
         run: |
-          IMAGE=ghcr.io/${{ github.repository_owner }}/my-devops-project:latest
+          IMAGE=ghcr.io/mellkam/devops-project:latest
           docker build --target final -t $IMAGE .
           docker push $IMAGE
 
